@@ -1,9 +1,9 @@
-# Projects
-List of projects I want to explore
+# Python Projects
+List of practice python projects that I've worked on
+
+So far I completed CodeAcademy's Python Tutorial as well as the exercises on Codingbat.com
 
 
 ### Ideas:
 
-1. Is this a good investment: ask user questions about the company and respond
-2. Email scraper to scrape StrictlyVC/TermSheet
-3. Personal website to look like https://www.sahillavingia.com and include links to stuff I like
+1. 99 Bottles of Beer
