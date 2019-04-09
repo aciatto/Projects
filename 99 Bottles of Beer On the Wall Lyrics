@@ -1,0 +1,28 @@
+"""
+[PROJECT] 99 Bottles of Beer On the Wall Lyrics
+
+GOAL
+Create a program that prints out every line to the song "99 bottles of beer on the wall."
+This should be a pretty simple program, so to make it a bit harder, here are some rules to follow.
+
+RULES
+If you are going to use a list for all of the numbers, do not manually type them all in.
+Instead, use a built in function.
+Besides the phrase "take one down," you may not type in any numbers/names of numbers directly into your song lyrics.
+Remember, when you reach 1 bottle left, the word "bottles" becomes singular.
+Put a blank line between each verse of the song.
+
+"""
+
+for num in range(95,99):
+    if num == 98:
+        print("%d bottle of beer on the wall, %d bottle of beer." % (99 - num, 99 - num))
+        print("Take one down and pass it around, no more bottles of beer on the wall.")
+        print()
+        print("No more bottles of beer on the wall, no more bottles of beer.")
+        print("Go to the store and buy some more, 99 bottles of beer on the wall.")
+    else:
+        print ("%d bottles of beer on the wall, %d bottles of beer." % (99 - num, 99 - num))
+        print ("Take one down and pass it around, %d bottles of beer on the wall." % (98 - num))
+    print ()
+
