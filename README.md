@@ -1,9 +1,14 @@
 # Python Projects
-List of practice python projects that I've worked on
+Python lessons + projects that I have completed to learn and improve my skills
 
-So far I completed CodeAcademy's Python Tutorial as well as the exercises on Codingbat.com
+### Lessons
+- CodeAcademy's Python Tutorial
+- Python Exercises on Codingbat.com
 
 
-### Ideas:
+### Projects:
+
+https://docs.google.com/document/d/1TyqD2_oDtiQIh_Y55J5RfeA91JJECc97xYIKM112H9I/edit
 
 1. 99 Bottles of Beer
+
