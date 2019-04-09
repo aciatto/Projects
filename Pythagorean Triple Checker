@@ -1,0 +1,38 @@
+'''
+[PROJECT] Pythagorean Triples Checker
+
+BACKGROUND INFORMATION
+
+If you do not know how basic right triangles work, read this article on wikipedia.
+
+MAIN GOAL
+
+Create a program that allows the user to input the sides of any triangle,
+and then return whether the triangle is a Pythagorean Triple or not.
+
+SUBGOALS
+
+If your program requires users to input the sides in a specific order,
+change the coding so the user can type in the sides in any order.
+Remember, the hypotenuse (c) is always the longest side.
+Loop the program so the user can use it more than once without having to restart the program.
+'''
+
+play = True
+
+while play:
+    s1 = int(input("Enter Side 1: "))
+    s2 = int(input("Enter Side 2: "))
+    s3 = int(input("Enter Side 3: "))
+    c1 = s1 ** 2 + s2 ** 2 == s3 ** 2
+    c2 = s1 ** 2 + s3 ** 2 == s2 ** 2
+    c3 = s2 ** 2 + s3 ** 2 == s1 ** 2
+    if c1 or c2 or c3:
+        print("This is a Pythagorean triple!")
+    else:
+        print("This is NOT a Pythagorean triple : (")
+    num = input("Type 0 to quit or anything else to play again: ")
+    if num == "0":
+        play = False
+print()
+print("Thanks for playing!")
