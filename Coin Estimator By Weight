@@ -1,0 +1,43 @@
+'''
+
+[Project] Coin Estimator By Weight
+
+When some people receive change after shopping, they put it into a container and let it add up over time.
+Once they fill up the container, they'll roll them up in coin wrappers which can then be traded in at a
+bank for what they are worth. While most banks will give away coin wrappers for free, it's convenient to have an
+idea of how many you will need. Instead of counting how many coins you have, it's easier to separate all of your coins,
+weigh them, and then estimate how many of each type you have and then how many wrappers you'll need.
+For example, if you weigh all of your dimes and see that you have 1276.9g of them, you can estimate that you have about
+563 dimes (since each one is 2.268g) and you would be able to fill 11 dime wrappers.
+
+Goal Create a program that allows the user to input the total weight of each type of coin they have
+(pennies, nickels, dimes, and quarters), and then print out how many of each type of wrapper they would need,
+how many coins they have, and the estimated total value of all of their money.
+
+Google weight of coins and how many fit in a wrapper
+
+Subgoals
+Round all numbers printed out to the nearest whole number.
+Allow the user to select whether they want to submit the weight in either grams or pounds.
+2 Comments
+
+'''
+
+penny_weight = float(125) / 50
+nickel_weight = float(200) / 40
+dime_weight = float(113.4) / 50
+quarter_weight = float(226.8) / 40
+
+num_pennies = int(input("How many grams do your pennies weigh?: ")) / penny_weight
+num_nickels = int(input("How many grams do your nickels weigh?: ")) / nickel_weight
+num_dimes = int(input("How many grams do your dimes weigh?: ")) / dime_weight
+num_quarters = int(input("How many grams do your quarters weigh?: ")) / quarter_weight
+
+print ("You have %d pennies and need %d wrappers" % (num_pennies, num_pennies / 50))
+print ("You have %d nickels and need %d wrappers" % (num_nickels, num_nickels / 40))
+print ("You have %d dimes and need %d wrappers" % (num_dimes, num_dimes / 50))
+print ("You have %d quarters and need %d wrappers" % (num_quarters, num_quarters / 40))
+
+print()
+total_money = float(num_pennies * 0.01 + num_nickels * 0.05 + num_dimes * 0.10 + num_quarters * 0.25)
+print("You have $%.2f " % float(total_money))
